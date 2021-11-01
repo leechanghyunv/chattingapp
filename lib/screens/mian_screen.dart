@@ -181,12 +181,12 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                               TextFormField(
                                 key: ValueKey(1),
                                 validator: (value){
-                                  if(value!.isEmpty || value!.length < 4){
+                                  if(value!.isEmpty || value.length < 4){
                                     return 'Please enter at least 4 characters';
                                   }
                                   return null;
                                 },
-                                // onSaved 사용자가 입력한 value 값을 저장하는 기능
+                                // onSaved 사용자가 입력한 value 값을 저장하는 ㄱㅣ능
                                 onSaved: (value){
                                   userName = value!;
                                 },
